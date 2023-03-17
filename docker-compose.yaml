@@ -32,3 +32,10 @@ services:
   depends_on:
   - redis
   - catalogue
+ mysql:
+  image: srikanthhg/mysql:v1
+  container_name: mysql
+ shipping:
+  image: srikanthhg/shipping:v1
+  container_name: shipping
+
