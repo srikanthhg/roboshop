@@ -25,4 +25,4 @@ services:
   - mongodb
   - redis
  redis:
- image: redis
+  image: redis
