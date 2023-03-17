@@ -10,6 +10,10 @@ services:
   - "8080:80"
   depends_on:
   - catalogue
+  - user
+  - cart
+  - mysql
+  - shipping
  mongodb:
   image: srikanthhg/mongo:v1
   container_name: mongodb
@@ -38,4 +42,6 @@ services:
  shipping:
   image: srikanthhg/shipping:v1
   container_name: shipping
+  depends_on
+  - mysql
 
