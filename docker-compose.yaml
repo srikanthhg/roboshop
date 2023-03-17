@@ -51,6 +51,6 @@ services:
   image: srikanthhg/payment:v1
   container_name: payment
   depends_on:
-  - rabbit
-  
+  - rabbitmq
+
 
