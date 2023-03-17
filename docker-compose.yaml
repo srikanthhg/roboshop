@@ -42,6 +42,6 @@ services:
  shipping:
   image: srikanthhg/shipping:v1
   container_name: shipping
-  depends_on
+  depends_on:
   - mysql
 
